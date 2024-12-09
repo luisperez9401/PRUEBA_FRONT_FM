@@ -20,7 +20,6 @@ form.addEventListener('submit', (e) => {
         document.getElementById('map').src = maps;
         document.getElementById('map-link').href = maps;
         document.getElementById('container-map').style.display = 'block';
-        document.getElementById('country').value = '';
         document.getElementById('country-name').innerHTML = countryName;
         document.getElementById('country-official').innerHTML = capital;
         document.getElementById('currencie-name').innerHTML = currencieName;
@@ -32,7 +31,6 @@ form.addEventListener('submit', (e) => {
         console.log(error);
         alert('No se pudo obtener información del pais: ' + country);
     });
-    document.getElementById('country').value = '';
     buttonSubmit.disabled = false;
     buttonSubmit.innerHTML = 'Buscar';
 });
