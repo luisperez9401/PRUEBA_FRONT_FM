@@ -13,11 +13,21 @@ body{
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     hr{
         border-color: #ffffff33;
+        width: 100%;
     }
-    form{
+    h3{
+        margin-bottom: 5px;
+    }
+    .subtitle{
+        margin-top: 0px;
+        margin-bottom:1rem;
+        font-size: 13px;
+    }
+    .form{
         display: flex;
         flex-direction: row;
         margin-bottom: 20px;
+        justify-content: space-between;
         .form-group{
             display: inline;
         }
@@ -45,13 +55,29 @@ body{
         }
     }
     #response-container{
-        display: flex;
+        display: none;
         flex-direction: column;
         p{
             margin-bottom: 5px;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+        }
+        #container-map{
+            display: none;
+        h3{
+            text-align: center;
+        }
+        p{
+            display:inline;
+            margin-bottom:10px;
+        }
+        iframe{
+            margin-top: 1rem;
+        }
+        a{
+            text-decoration: none;
+            color:rgb(32, 121, 255);
         }
     }
 }

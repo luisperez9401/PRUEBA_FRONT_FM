@@ -8,23 +8,31 @@
 </head>
 <body>
     <div id="container">
-        <h4>Ingrese un país:</h4>
-        <form action="#" id="form-submit">
-            <div class="form-group">
-                <input type="text" name="country" id="country" required="required" autofocus>
-            </div>
-            <div class="form-group">
-                <button type="submit" class="btn btn-submit">Buscar</button>
-            </div>
-        </form>
-        <hr>
+        <h3>Ingrese el nombre de un país:</h3>
+        <p class="subtitle">Obtener información básica de un pais.</p>
+        <div class="form">
+            <form action="#" id="form-submit">
+                <div class="form-group">
+                    <input type="text" name="country" id="country" required="required" autofocus>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-submit">Buscar</button>
+                </div>
+            </form>
+        </div>
         <div id="response-container">
+            <hr>
             <p><b>Nombre:</b> <span id="country-name"></span></p>
             <p><b>Nombre oficial:</b> <span id="country-official"></span></p>
             <p><b>Moneda:</b> <span id="currencie-name"></span></p>
             <p><b>Continente:</b> <span id="region"></span></p>
-            <p><b>Cápital:</b> <span id="capital"></span></p>
+            <p><b>Capital:</b> <span id="capital"></span></p>
             <p><b>Área:</b> <span id="area"></span></p>
+            <div id="container-map">
+                <h3>Mapa del país:</h3>
+                <p>Si a continuación no puedes ver el mapa puedes verlo <a id="map-link" href="" target="_blank">aqui.</a></p>
+                <iframe id="map" src="" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.8/axios.min.js" integrity="sha512-v8+bPcpk4Sj7CKB11+gK/FnsbgQ15jTwZamnBf/xDmiQDcgOIYufBo6Acu1y30vrk8gg5su4x0CG3zfPaq5Fcg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
